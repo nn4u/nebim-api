@@ -20,4 +20,4 @@ use App\Http\Controllers\ProductController;
 
    Route::any('/get-products', [ProductController::Class, 'getProducts'])->name('get.product');
    Route::any('/sync-products', [ProductController::Class, 'syncProduct'])->name('sync.product');
-   
+   Route::any('/update-products', [ProductController::Class, 'updateExist'])->name('update.product');
